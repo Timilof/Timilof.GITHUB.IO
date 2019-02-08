@@ -3,6 +3,23 @@ https://timilof.github.io/week1/
 
 Doel: Data ophalen uit een API en renderen in een overzichtspagina.
 
+
+Welke actoren zitten er in jouw applicatie? (actor diagram)
+Welke API wordt gebruikt en wat zijn de beperkingen? (rate limit)
+
+  De API die ik gebruik is 'https://swapi.co/api/people'
+  De enige beperking is de data die de API terug geeft, het geeft slechts tekst en ik zou er plaatjes in willen verwerken.
+
+Hoe flowed interactie door de applicatie? (interaction diagram)
+  De interactie flow is instant en makkelijk te begijpen...
+
+Welke design patterns en best practices
+  Ik heb het erg simpel gehouden en weergeef de informatie op een makkelijke manier.
+
+Wat zou je nog willen toevoegen (feature wishlist / backlog)
+  Images en de mogelijkheid om door te clicken in de individuele character pagina.
+
+
 [Opdrachten](https://drive.google.com/open?id=1OVhWQNaCgSluYviTKKWcApkyPd23xow1PiExb8GYANM)
 
 [Slides](https://drive.google.com/open?id=1Rjl9xqXoKniQSRJPdkU1O5YwWC33SJK8KiV0a-H_xZU)
