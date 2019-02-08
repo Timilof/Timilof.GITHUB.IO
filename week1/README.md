@@ -1,4 +1,5 @@
-https://timilof.github.io/week1/# Week 1 - Hello API 🐒
+# Week 1 - Hello API 🐒
+https://timilof.github.io/week1/
 
 Doel: Data ophalen uit een API en renderen in een overzichtspagina.
 

@@ -1,0 +1,48 @@
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+body {
+background-color: #eee;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 1rem;
+  /* border: 1px solid gray;
+  background-color: lime; */
+  text-align: center;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  box-shadow: 0 10px 15px 0px rgba(0,0,0,0.1);
+      -moz-box-shadow: 0 10px 15px 0px rgba(0,0,0,0.1);
+      -webkit-box-shadow: 0 10px 15px 0px rgba(0,0,0,0.1);
+      -o-box-shadow: 0 10px 15px 0px rgba(0,0,0,0.1);
+      -ms-box-shadow: 0 10px 15px 0px rgba(0,0,0,0.1);
+
+}
+
+.card:hover{
+  box-shadow: 0 10px 35px 0px rgba(0,0,0,0.1);
+      -moz-box-shadow: 0 10px 35px 0px rgba(0,0,0,0.1);
+      -webkit-box-shadow: 0 10px 35px 0px rgba(0,0,0,0.1);
+      -o-box-shadow: 0 10px 35px 0px rgba(0,0,0,0.1);
+      -ms-box-shadow: 0 10px 35px 0px rgba(0,0,0,0.1);
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    flex: 1 1 calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    flex: 1 1 calc(33% - 2rem);
+  }
+}
