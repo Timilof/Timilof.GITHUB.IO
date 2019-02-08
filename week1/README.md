@@ -1,5 +1,7 @@
 # Week 1 - Hello API 🐒
 
+## use app.js
+
 ### What does this app do
 My script fetches data from an API and displays 10 maincharacters form Star Wars. The user can filter the characters by name. It compares the user input with the character names and returns the characters that match.
   
