@@ -1,9 +1,10 @@
 # Week 1 - Hello API 🐒
-<<<<<<< HEAD
-https://timilof.github.io/week1/
 
 ### What does this app do
 My script fetches data from an API and displays 10 maincharacters form Star Wars. The user can filter the characters by name. It compares the user input with the character names and returns the characters that match.
+  
+  It looks like this.
+  ![screen cap img](public/img/screen_1.png)  
   
 Welke actoren zitten er in jouw applicatie? (actor diagram)
 There is a user and the API server
