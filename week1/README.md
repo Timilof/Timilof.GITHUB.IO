@@ -1,9 +1,8 @@
 # Week 1 - Hello API 🐒
-https://timilof.github.io/week1/
 
 Doel: Data ophalen uit een API en renderen in een overzichtspagina.
-
-
+  Mijn script weergeeft 10 hoofdpersonages van Star Wars. De gebruiker heeft de mogelijkheid om een de personages te filteren   op naam. Ik vergelijk de gebruikers input met de namen van de gebruikers en return de characters die overeenkomen.
+  
 Welke actoren zitten er in jouw applicatie? (actor diagram)
 Welke API wordt gebruikt en wat zijn de beperkingen? (rate limit)
 
