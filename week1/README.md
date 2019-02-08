@@ -6,11 +6,11 @@ My script fetches data from an API and displays 10 maincharacters form Star Wars
   It looks like this.
   ![screen cap img](public/img/screen_1.png)  
   
-Welke actoren zitten er in jouw applicatie? (actor diagram)
+### Welke actoren zitten er in jouw applicatie? (actor diagram)
 There is a user and the API server
   ![actor diagram img](public/img/actor_dia.png)
   
-Welke API wordt gebruikt en wat zijn de beperkingen? (rate limit)
+### Welke API wordt gebruikt en wat zijn de beperkingen? (rate limit)
   De API die ik gebruik is 'https://swapi.co/api/people'
   De enige beperking is de data die de API terug geeft, het geeft slechts tekst en ik zou er plaatjes in willen verwerken.
 
