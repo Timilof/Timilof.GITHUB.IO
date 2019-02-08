@@ -11,6 +11,8 @@ Welke API wordt gebruikt en wat zijn de beperkingen? (rate limit)
   De enige beperking is de data die de API terug geeft, het geeft slechts tekst en ik zou er plaatjes in willen verwerken.
 
 Hoe flowed interactie door de applicatie? (interaction diagram)
+![interactin img](/public/img/interaction.png)
+
   De interactie flow is instant en makkelijk te begijpen...
 
 Welke design patterns en best practices
