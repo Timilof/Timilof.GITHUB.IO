@@ -1,36 +1,30 @@
 # Week 1 - Hello API 🐒
 
+## use app.js
+
 ### What does this app do
-My script fetches data from an API and displays 10 maincharacters form Star Wars. The user can filter the characters by name. It compares the user input with the character names and returns the characters that match.
+My script fetches data from an API and displays 10 countries with capitals. The user can view the countries and capitals and see the latitude and lontitude of each country seperately.
   
   It looks like this.
   ![screen cap img](public/img/screen_1.png)  
   
 ### Welke actoren zitten er in jouw applicatie? (actor diagram)
 There is a user and the API server
-  ![actor diagram img](public/img/actor_dia.png)
+  ![actor diagram img](public/img/actoren_diagram_v1.png)
   
 ### Welke API wordt gebruikt en wat zijn de beperkingen? (rate limit)
-  De API die ik gebruik is 'https://swapi.co/api/people'
-  De enige beperking is de data die de API terug geeft, het geeft slechts tekst en ik zou er plaatjes in willen verwerken.
+  The API I'm using is 'https://restcountries.eu/'
+  The only limitations to this API is the way the data is arranged (all 180 countries have been devided across three large objects).
 
 ### Hoe flowed interactie door de applicatie? (interaction diagram)
 
 ![interactin img](public/img/interaction.png)
 
-  De interactie flow is instant en makkelijk te begijpen...
+  The interaction flow is instant and easy to understand.
 
 ### Welke design patterns en best practices
-  Ik heb het erg simpel gehouden en weergeef de informatie op een makkelijke manier.
+  I've kept it very simple and load data prior to any user choices so as to assure a speedy feel to the app.
 
 ### Wat zou je nog willen toevoegen (feature wishlist / backlog)
-  Images en de mogelijkheid om door te clicken in de individuele character pagina.
+  I'd like to add images of each countries respective flag and I'd like to attempt to link a second API (sunset API) which can request data the first API.
 
-
-[Opdrachten](https://drive.google.com/open?id=1OVhWQNaCgSluYviTKKWcApkyPd23xow1PiExb8GYANM)
-
-[Slides](https://drive.google.com/open?id=1Rjl9xqXoKniQSRJPdkU1O5YwWC33SJK8KiV0a-H_xZU)
-
-
-link naar repo
-https://timilof.github.io/week1/
