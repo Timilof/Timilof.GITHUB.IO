@@ -10,7 +10,7 @@ My script fetches data from an API and displays 10 countries with capitals. The 
   
 ### Welke actoren zitten er in jouw applicatie? (actor diagram)
 There is a user and the API server
-  ![actor diagram img](public/img/actor_dia.png)
+  ![actor diagram img](public/img/actoren_diagram_v1.png)
   
 ### Welke API wordt gebruikt en wat zijn de beperkingen? (rate limit)
   The API I'm using is 'https://restcountries.eu/'
