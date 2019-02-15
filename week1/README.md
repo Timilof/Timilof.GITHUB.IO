@@ -6,7 +6,7 @@
 My script fetches data from an API and displays 10 countries with capitals. The user can view the countries and capitals and see the latitude and lontitude of each country seperately.
   
   It looks like this.
-  ![screen cap img](public/img/screen_1.png)  
+  ![screen cap img](public/img/screen_2.png)  
   
 ### Welke actoren zitten er in jouw applicatie? (actor diagram)
 There is a user and the API server
