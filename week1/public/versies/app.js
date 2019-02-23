@@ -21,16 +21,15 @@ function dataFetch() {
 
 dataFetch()
 
-// document.querySelector('#search').addEventListener('input', (e) => {
-//
-//   const filteredCharacters = characters.filter((character) => character.toLowerCase().includes(e.target.value.toLowerCase()));
-//   container.innerHTML = '';
-//   filteredCharacters.forEach((character) => {
-// console.log(character);
-//     looping(character);
-//   })
-// });
+document.querySelector('#search').addEventListener('input', (e) => {
 
+  const filteredCharacters = characters.filter((character) => character.toLowerCase().includes(e.target.value.toLowerCase()));
+  container.innerHTML = '';
+  filteredCharacters.forEach((character) => {
+console.log(character);
+    looping(character);
+  })
+});
 function looping(array) {
 
 
@@ -40,10 +39,7 @@ function looping(array) {
 <div class="">
 <h1 class="naam">${iteraties.name}</h1>
 <p class="hit">${iteraties.height} cm</p>
-
-
 </div>
-
 `
 
     container.insertAdjacentHTML('beforeend', elemet)
