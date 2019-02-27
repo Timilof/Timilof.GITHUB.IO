@@ -82,7 +82,7 @@ const api = {
       request.onload = () => {
         if (request.status >= 200 && request.status < 400) {
           const data = api.parse(request);
-          const slicedData = data.slice(0, 52);
+          const slicedData = data.slice(0, 250);
           resolve(slicedData);
           // router.detail();
           slicedData.forEach((countryName) => {
