@@ -20,6 +20,10 @@ grid-auto-rows: minmax(100px, auto);
   box-shadow: 0 10px 15px 0px rgba(0,0,0,0.1);
 }
 
+.template img{
+  max-width: 50%;
+}
+
 @keyframes infinite-spinning {
   from {
     transform: rotate(0deg);
