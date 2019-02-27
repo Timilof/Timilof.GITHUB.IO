@@ -20,6 +20,29 @@ grid-auto-rows: minmax(100px, auto);
   box-shadow: 0 10px 15px 0px rgba(0,0,0,0.1);
 }
 
+@keyframes infinite-spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loadingt{
+background-color: lime;
+background-image: url(../img/hearts.svg);
+background-repeat: no-repeat;
+background-position: center;
+/* animation: infinite-spinning .01s infinite; */
+}
+.hidden{
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 #search{
   padding: 20px;
   font-size: 30px;

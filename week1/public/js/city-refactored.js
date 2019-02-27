@@ -2,17 +2,22 @@
 
 
 const router = {
+  // handle : function(){
+  // localStoreData.handle();
+  // },
   overview: function() {
     routie({
       '': function() {
+        render.loader();
         api.getData(api.overviewUrl)
           .then(data => {
-            // sections.showMain();
             render.elementMake(data)
+            render.stopLoader();
+            localStoreData.localData(data);
             console.log('data is home')
           })
           .catch(function(error){
-            render.errorpoep()
+            // render.errorpoep()
           });
       },
       'detail/:capital': function() {
@@ -29,55 +34,37 @@ const router = {
     })
   }
 }
-// const router = {
-//   overview: function() {
-//     api.getdata(api.overviewUrl)
-//       .then(data => {
-//         routie('/', () => {
-//           render.elementMake(data)
-//           console.log('data is de home')
-//         })
-//       });
-//     routie('/')
-//   },
-//
-//   detail: function() {
-//     const currentUrl = document.URL; //Get current url from document
-//     const id = currentUrl.substring(currentUrl.lastIndexOf('/') + 1); //Take out the id from url.
-//     api.getdata(api.detailUrl+id)
-// console.log(id});
-//     //   .then(data => {
-//     // window.location.hash = `detail/${id}`
-//     routie('detail/:capital', data => {
-//       render.detailMake(data)
-//       console.log('data is de detail')
-//       // window.location.hash = 'detail'
-//     })
-//     // })
-//   }
 
 
-// document.querySelector('#search').addEventListener('input', (e) => {
-// const template = document.getElementById('main');
-//   const filteredCountries = countries.filter((countries) => countries.toLowerCase().includes(e.target.value.toLowerCase()));
-//   // template.innerHTML = '';
-//   filteredCountries.forEach((countries) => {
-//     console.log(countries);
-//
-//     const saveData = [];
-//     countries.map(country => {
-//       const templateElements = { // create elements for the class and div's.
-//         country: country.name,
-// capital: country.capital,
-//       };
-//       tempData.push(templateElements)
-//
-//       // routie("detail/" + this.capital);
-//     })
-// Transparency.render(template, tempData);
-//     // render.elementMake(countries);
-//   });
-// })
+const localStoreData = {
+  handle: function() {
+          let getLocalstorageData = localStorage.getItem('country');
+          getLocalstorageData = JSON.parse(getLocalstorageData);
+
+          if (getLocalstorageData){ //If localData has data then use this data
+              render.elementMake(getLocalstorageData);
+              console.log(getLocalstorageData)
+              console.log('Timd')
+              console.log('Timd')
+          }
+          else{              //If localstorage is empty, do a get request
+             router.overview();
+          }
+      },
+      localData: function(data){
+          const saveLocalData = [];
+
+          data.map(country => { // Map is used to get only an array that contains the title and descriptions of the data from each country.
+              const localElements = { // create elements for the class and div's.
+              country: country.name,
+              capital: country.capital,
+              };
+              saveLocalData.push(localElements)
+                  // console.log(country.name);
+          })
+          window.localStorage.setItem('country', JSON.stringify(saveLocalData));          //Set title and description in localStorage
+      }
+}
 
 const api = {
   countries : [],
@@ -117,7 +104,16 @@ const api = {
 }
 
 const render = {
-
+  loader: function(){
+      const template = document.body;
+      template.classList.remove('hidden');
+      template.classList.add('loadingt');
+},
+stopLoader:function(){
+    const template = document.body;
+    template.classList.remove('loadingt');
+    template.classList.add('hidden');
+},
   elementMake: function(data) {
     // map is used to get only country name and capital form the array
     const template = document.getElementById('main');
@@ -132,9 +128,6 @@ capital: country.capital,
       // routie("detail/" + this.capital);
     })
 Transparency.render(template, saveData);
-window.localStorage.setItem('country', JSON.stringify(saveData));
-const froot = JSON.parse(window.localStorage.getItem('country'));
-console.log(froot);
 
     const directives = { // Directives are plain javascript functions defined in a two-dimensional object literal, i.e.,
       link: {
@@ -153,7 +146,7 @@ console.log(froot);
     // console.log(json);
     const template = document.getElementById('main');
     const saveDetailData = [];
-    console.log(data);
+    // console.log(data);
     const currentUrl = document.URL; //Get current url from document
     const id = currentUrl.substring(currentUrl.lastIndexOf('/') + 1); //Take out the id from url.
     const countyid = data.filter(county => {
