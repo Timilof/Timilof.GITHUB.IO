@@ -5,68 +5,41 @@ const router = {
   // handle : function(){
   // localStoreData.handle();
   // },
-roudie: function(){
+routie: function(){
   routie({
       '': function() {
         router.mainpage();
       },
       'detail/:capital': function() {
         router.detailpage()
-      }
+      },
+      // 'detail': function() {
+      //         router.mainpage()
+      //       }
     });
 },
 mainpage: function() {
       render.loader();
       api.getData(api.overviewUrl)
         .then(function(data) {
-          console.log(data);
           render.elementMake(data)
           render.stopLoader();
+          render.links();
         })
-        .catch(function(error){
-          // render.errorpoep()
+        .catch(function(){
+          render.errorPage()
+          render.stopLoader();
         });
     },
     detailpage: function() {
           render.loader();
           api.getData(api.overviewUrl)
             .then(function(data) {
-              console.log(data);
               render.detailMake(data)
               render.stopLoader();
             });
         }
-//   // overview: function() {
-//   //   routie({
-//   //     '': function() {
-//   //       render.loader();
-//   //       api.getData(api.overviewUrl)
-//   //         .then(data => {
-//   //           render.elementMake(data)
-//   //           render.stopLoader();
-//   //           localStoreData.localData(data);
-//   //           console.log('data is home')
-//   //         })
-//   //         .catch(function(error){
-//   //           // render.errorpoep()
-//   //         });
-//   //     },
-//       'detail/:capital': function() {
-//         const currentUrl = document.URL; //Get current url from document
-//         const id = currentUrl.substring(currentUrl.lastIndexOf('/') + 1); //Take out the id from url.
-// render.loader();
-//         api.getData(api.detailUrl + id)
-//           .then(data => {
-//             console.log('data is detail')
-//             // sections.showDetail();
-//             render.detailMake(data)
-// render.stopLoader();
-  //         })
-  //     }
-  //   })
-  // }
 }
-
 
 const localStoreData = {
   handle: function() {
@@ -166,6 +139,7 @@ stopLoader:function(){
       }
     }
     Transparency.render(template, data, directives);
+            render.mainSlim()
 
   },
 
@@ -186,19 +160,49 @@ stopLoader:function(){
         flag: countryDetail.flag,
         country: countryDetail.name,
         capital: countryDetail.capital,
-        latitude: countryDetail.latlng[1],
-        longtitude: countryDetail.latlng[0],
+        latitude: 'latitude ' + countryDetail.latlng[1],
+        longtitude: 'longtidude ' +countryDetail.latlng[0],
       };
       saveDetailData.push(templateElementsDetail)
       const flagg = document.querySelector('.flag');
       flagg.src = templateElementsDetail.flag
-      console.log(flagg)
+      render.mainWide();
     })
 
 
 
     Transparency.render(template, saveDetailData);
 
-  }
+  },
+mainSlim: function(){
+const template = document.getElementById('main');
+template.classList.remove('wide');
+},
+mainWide: function(){
+const template = document.getElementById('main');
+template.classList.add('wide');
+},
+
+errorPage: function(){
+const template = document.getElementById('main');
+const saveErrorElements = [];
+const errorElements = {
+  e_msg: 'Data unavailable',
+  wdid: 'Could not retrieve data from server',
+    }
+render.mainWide();
+saveErrorElements.push(errorElements);
+
+Transparency.render(template, saveErrorElements);
+},
+
+links: function disableLinks(){
+const inactiveLinks = document.querySelectorAll("a[href='#detail/']");
+inactiveLinks.forEach((link) => {
+link.classList.add('inactive');
+})
 }
-router.roudie();
+
+}
+
+router.routie();

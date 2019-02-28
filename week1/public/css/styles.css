@@ -12,6 +12,30 @@ grid-template-columns: repeat(4, 1fr);
 grid-auto-rows: minmax(100px, auto);
 }
 
+.inactive{
+color: #afafaf;
+cursor: help;
+}
+
+#homer img{
+  max-width: 30%;
+  display: block;
+  margin: auto;
+  margin-top: -12em;
+  margin-bottom: -6em;
+}
+
+#homer a:hover{
+color: #9a8d8d;
+cursor: pointer;
+}
+#homer a{
+  font-size: 60px;
+  text-decoration: underline;
+  text-align: center;
+  display: block;
+}
+
 .template {
   margin: 1rem;
   padding: 45px;
@@ -21,30 +45,32 @@ grid-auto-rows: minmax(100px, auto);
 }
 
 .template img{
-  max-width: 50%;
-}
-
-@keyframes infinite-spinning {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  max-width: 30%;
+  display: none;
 }
 
 .loadingt{
-background-color: lime;
+background-color: #7a9ba5;
 background-image: url(../img/hearts.svg);
 background-repeat: no-repeat;
 background-position: center;
-/* animation: infinite-spinning .01s infinite; */
 }
 .hidden{
   background-image: none;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.wide .template{
+box-shadow: none;
+}
+
+.wide .template img{
+display: inline;
+}
+
+.wide{
+display: block;
 }
 
 #search{
