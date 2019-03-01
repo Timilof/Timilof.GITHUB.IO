@@ -13,11 +13,11 @@ More specifically the app makes an api call once the page is loaded and displays
  
  
 ## Features
-  *Overview page with countries
-  *Detailpages with more info for each country
-  *Routing with [Routie](http://projects.jga.me/routie/)
-  *Templating with [transparency](https://github.com/leonidas/transparency)
-  *Loading states
+  * Overview page with countries
+  * Detailpages with more info for each country
+  * Routing with [Routie](http://projects.jga.me/routie/)
+  * Templating with [transparency](https://github.com/leonidas/transparency)
+  * Loading states
  
  
 ## API 
