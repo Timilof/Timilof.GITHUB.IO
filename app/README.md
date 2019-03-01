@@ -3,7 +3,7 @@ My repository for web app from scratch
 
 In the three weeks this course lasted I was tasked to make a web app from scratch using only vanilla JavaScript.
 
-...
+___
 
 ## My App
 My App displays all countries and independent states in the world (currently 250 countries total) and allows you to view a few details/some information about them. To do this the app uses the api [restcountries](https://restcountries.eu/).
