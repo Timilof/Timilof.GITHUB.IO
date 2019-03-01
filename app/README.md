@@ -10,7 +10,14 @@ More specifically the app makes an api call once the page is loaded and displays
   
   ![screen cap img](public/img/screen_2.png)  
   
-  
+ 
+ 
+## Features
+  Overview page with countries
+  Detailpages with more info for each country
+  Routing with [Routie](http://projects.jga.me/routie/)
+  Templating with [transparency](https://github.com/leonidas/transparency)
+  Loading states
  
  
 ## API 
