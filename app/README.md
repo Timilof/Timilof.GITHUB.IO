@@ -76,8 +76,8 @@ More specifically the app makes an api call once the page is loaded and displays
    * Variables are declared at the top of each scope
    
 ## Libraries
-   [Transparency templating engine](https://github.com/leonidas/transparency)
-   [Routie](http://projects.jga.me/routie/)
+[Transparency templating engine](https://github.com/leonidas/transparency)
+[Routie](http://projects.jga.me/routie/)
 
 ## Feature wishlist 
   * I'd like to attempt to link a second API (sunset API) which can show what time the sun sets and rises for each county depending on the longtitude and latitude coordinates.
