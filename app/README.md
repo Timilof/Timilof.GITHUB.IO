@@ -55,6 +55,8 @@ More specifically the app makes an api call once the page is loaded and displays
 
 ## Actor diagram
 
+The main actors of the app are described in the following diagram.
+
   ![actor diagram img](public/img/actoren_diagram_v3.svg)
 
 
@@ -63,7 +65,7 @@ More specifically the app makes an api call once the page is loaded and displays
   The interaction flow of the app is described in the following diagram.
 
 
-![interactin img](public/img/interaction_diagram_v1.png)
+![interactin img](public/img/interaction_diagram_v2.svg)
 
 ## Best practices I've applied
    * I've used object literals to structure my code
