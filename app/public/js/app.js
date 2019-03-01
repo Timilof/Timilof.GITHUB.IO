@@ -1,6 +1,5 @@
-'use strict'
-
-
+'use strict';
+(function(){
 const router = {
   // handle : function(){
   // localStoreData.handle();
@@ -31,8 +30,7 @@ const router = {
   },
   detailpage: function() {
     loader.start();
-    const id = document.URL.substring(document.URL.lastIndexOf('/') + 1); //Take out the id from url.
-    api.getData(api.detailUrl+id)
+    api.getData(api.detailUrl+api.id())
       .then(function(data) {
         render.detailTemplate(data)
       })
@@ -75,10 +73,8 @@ const localStoreData = {
 }
 
 const api = {
-  id: function() {
-    const id = document.URL.substring(document.URL.lastIndexOf('/') + 1); //Take out the id from url.
-  },
-  // countries: [],
+  id: function(){const id = document.URL.substring(document.URL.lastIndexOf('/') + 1)
+      return id},
   detailUrl: 'https://restcountries.eu/rest/v2/capital/',
   mainUrl: 'https://restcountries.eu/rest/v2/all',
   getData: function(url) {
@@ -212,3 +208,5 @@ const render = {
 
 
 router.routing();
+
+})();
