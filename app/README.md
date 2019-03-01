@@ -51,9 +51,11 @@ More specifically the app makes an api call once the page is loaded and displays
 
 ## Interaction diagram
 
+  The interaction flow of the app is described in the following diagram.
+
+
 ![interactin img](public/img/interaction_diagram_v1.png)
 
-  The interaction flow is instant and easy to understand.
   
 
 ## Best practices I've applied
