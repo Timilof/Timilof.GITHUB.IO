@@ -76,7 +76,7 @@ More specifically the app makes an api call once the page is loaded and displays
    * Variables are declared at the top of each scope
    
 ## Libraries
-[Transparency templating engine](https://github.com/leonidas/transparency)
+[Transparency templating engine](https://github.com/leonidas/transparency)  
 [Routie](http://projects.jga.me/routie/)
 
 ## Feature wishlist 
