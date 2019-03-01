@@ -16,7 +16,7 @@ My script fetches data from an API and displays 10 countries with capitals. The 
   I'm using the [restcountries](https://restcountries.eu/) API.
   I haven't come across any restrictions in my use case, the only problem i found was routing to each country's capital however it wasn't limiting rather a case of understanding.
 
-### Welke actoren zitten er in jouw applicatie? (actor diagram)
+### Actor diagram
 There is a user and the API server
   ![actor diagram img](public/img/actoren_diagram_v1.png)
   
