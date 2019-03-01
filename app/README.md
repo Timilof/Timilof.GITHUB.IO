@@ -39,8 +39,7 @@ My script fetches data from an API and displays 10 countries with capitals. The 
    [Transparency templating engine](https://github.com/leonidas/transparency)
    [Routie](http://projects.jga.me/routie/)
 
-### Wat zou je nog willen toevoegen (feature wishlist / backlog)
+### Feature wishlist 
   I'd like to attempt to link a second API (sunset API) which can show what time the sun sets and rises for each county depending on the longtitude and latitude coordinates.
   I had tried to implement a local storage to reduce the number of api calls however I found it rather difficult.
   a filter option so the user can fill in a value in a search field and the app would filter the countries based on the input... so basically I'd like to make it possible for the user to search.
-
