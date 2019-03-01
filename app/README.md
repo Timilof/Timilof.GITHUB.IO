@@ -5,9 +5,6 @@ In the three weeks this course lasted I was tasked to make a web app from scratc
 ### My App
 My App displays all countries and independent states in the world (currently 250 countries total) and allows you to view a few details/some information about them. To do this the app uses the api [restcountries](https://restcountries.eu/).
 More specifically the app makes an api call once the page is loaded and displays all countries onze the data has been collected. The user then has the option to click on any one country which will trigger a second api call which displays more information about that specific country. 
-
-### 
-My script fetches data from an API and displays 10 countries with capitals. The user can view the countries and capitals and see the latitude and lontitude of each country seperately.
   
   It looks like this.
   
