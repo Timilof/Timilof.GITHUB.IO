@@ -65,8 +65,6 @@ More specifically the app makes an api call once the page is loaded and displays
 
 ![interactin img](public/img/interaction_diagram_v1.png)
 
-  
-
 ## Best practices I've applied
    * I've used object literals to structure my code
    * I don't use global variables
