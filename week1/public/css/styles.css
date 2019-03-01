@@ -14,7 +14,7 @@ grid-auto-rows: minmax(100px, auto);
 
 .inactive{
 color: #afafaf;
-cursor: help;
+cursor: not-allowed;
 }
 
 #homer img{
@@ -49,11 +49,15 @@ cursor: pointer;
   display: none;
 }
 
+.template .population{
+display: none;
+}
+
 .loadingt{
 background-color: #7a9ba5;
 background-image: url(../img/hearts.svg);
 background-repeat: no-repeat;
-background-position: center;
+background-position: 50% 20%;
 }
 .hidden{
   background-image: none;
@@ -63,6 +67,11 @@ background-position: center;
 }
 .wide .template{
 box-shadow: none;
+cursor: default;
+}
+
+.wide .template .population{
+display: block;
 }
 
 .wide .template img{

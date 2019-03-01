@@ -13,9 +13,10 @@ routie: function(){
       'detail/:capital': function() {
         router.detailpage()
       },
-      // 'detail': function() {
-      //         router.mainpage()
-      //       }
+      'detail': function() {
+              // render.errorPage()
+console.log('prooooooo')
+            }
     });
 },
 mainpage: function() {
@@ -36,6 +37,11 @@ mainpage: function() {
           api.getData(api.overviewUrl)
             .then(function(data) {
               render.detailMake(data)
+              render.stopLoader();
+              render.links();
+            })
+            .catch(function(){
+              render.errorPage()
               render.stopLoader();
             });
         }
@@ -79,7 +85,6 @@ id: function(){
   countries : [],
   detailUrl: 'https://restcountries.eu/rest/v2/capital/',
   overviewUrl: 'https://restcountries.eu/rest/v2/all',
-  baseUrl: 'https://restcountries.eu/rest/v2/',
   getData: function(url) {
     return new Promise(function(resolve, reject) {
       const request = new XMLHttpRequest();
@@ -140,7 +145,6 @@ stopLoader:function(){
     }
     Transparency.render(template, data, directives);
             render.mainSlim()
-
   },
 
   detailMake: function(data) {
@@ -159,14 +163,16 @@ stopLoader:function(){
       const templateElementsDetail = { // create elements for the class and div's.
         flag: countryDetail.flag,
         country: countryDetail.name,
-        capital: countryDetail.capital,
-        latitude: 'latitude ' + countryDetail.latlng[1],
-        longtitude: 'longtidude ' +countryDetail.latlng[0],
+        capital: 'capital: '+countryDetail.capital,
+        population: 'population: ' +countryDetail.population,
+        latitude: 'latitude: ' + countryDetail.latlng[1],
+        longtitude: 'longtidude: ' +countryDetail.latlng[0],
       };
       saveDetailData.push(templateElementsDetail)
       const flagg = document.querySelector('.flag');
       flagg.src = templateElementsDetail.flag
       render.mainWide();
+console.log('detail')
     })
 
 
@@ -178,6 +184,7 @@ mainSlim: function(){
 const template = document.getElementById('main');
 template.classList.remove('wide');
 },
+
 mainWide: function(){
 const template = document.getElementById('main');
 template.classList.add('wide');
@@ -200,6 +207,7 @@ links: function disableLinks(){
 const inactiveLinks = document.querySelectorAll("a[href='#detail/']");
 inactiveLinks.forEach((link) => {
 link.classList.add('inactive');
+link.href = '#';
 })
 }
 
