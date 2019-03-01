@@ -25,7 +25,7 @@ More specifically the app makes an api call once the page is loaded and displays
   I'm using the [restcountries](https://restcountries.eu/) API.
   I haven't come across any restrictions in my use case, the only problem i found was routing to each country's capital however it wasn't limiting rather a case of understanding.
   
-  i collect the data asynchronously with a promise
+  I collect the data asynchronously with a promise
   ```javascript
   getData: function(url) {
     return new Promise(function(resolve, reject) {
@@ -78,6 +78,6 @@ More specifically the app makes an api call once the page is loaded and displays
    [Routie](http://projects.jga.me/routie/)
 
 ## Feature wishlist 
-  I'd like to attempt to link a second API (sunset API) which can show what time the sun sets and rises for each county depending on the longtitude and latitude coordinates.
-  I had tried to implement a local storage to reduce the number of api calls however I found it rather difficult.
-  a filter option so the user can fill in a value in a search field and the app would filter the countries based on the input... so basically I'd like to make it possible for the user to search.
+  * I'd like to attempt to link a second API (sunset API) which can show what time the sun sets and rises for each county depending on the longtitude and latitude coordinates.
+  * I had tried to implement a local storage to reduce the number of api calls however I found it rather difficult.
+  * A filter option so the user can fill in a value in a search field and the app would filter the countries based on the input... so basically I'd like to make it possible for the user to search.
