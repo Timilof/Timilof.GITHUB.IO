@@ -12,7 +12,8 @@ More specifically the app makes an api call once the page is loaded and displays
   
   
  
-## API and limits rate limit)
+ 
+## API 
 
   I'm using the [restcountries](https://restcountries.eu/) API.
   I haven't come across any restrictions in my use case, the only problem i found was routing to each country's capital however it wasn't limiting rather a case of understanding.
