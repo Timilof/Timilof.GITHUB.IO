@@ -29,9 +29,6 @@ More specifically the app makes an api call once the page is loaded and displays
           const data = api.parse(request);
           const slicedData = data.slice(0, 250);
           resolve(slicedData);
-          slicedData.forEach((countryName) => {
-            api.countries.push(countryName.name);
-          })
         } else {
           reject(request.status);
         }
