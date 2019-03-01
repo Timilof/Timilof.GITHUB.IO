@@ -10,6 +10,7 @@ More specifically the app makes an api call once the page is loaded and displays
 My script fetches data from an API and displays 10 countries with capitals. The user can view the countries and capitals and see the latitude and lontitude of each country seperately.
   
   It looks like this.
+  
   ![screen cap img](public/img/screen_2.png)  
   
 ### Welke API wordt gebruikt en wat zijn de beperkingen? (rate limit)
@@ -17,7 +18,7 @@ My script fetches data from an API and displays 10 countries with capitals. The 
   I haven't come across any restrictions in my use case, the only problem i found was routing to each country's capital however it wasn't limiting rather a case of understanding.
 
 ### Actor diagram
-There is a user and the API server
+
   ![actor diagram img](public/img/actoren_diagram_v1.png)
   
 ### Interaction diagram
