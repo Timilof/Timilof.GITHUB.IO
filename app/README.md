@@ -10,19 +10,24 @@ More specifically the app makes an api call once the page is loaded and displays
   
   ![screen cap img](public/img/screen_2.png)  
   
-### Welke API wordt gebruikt en wat zijn de beperkingen? (rate limit)
+  
+ 
+### API and limits rate limit)
+
   I'm using the [restcountries](https://restcountries.eu/) API.
   I haven't come across any restrictions in my use case, the only problem i found was routing to each country's capital however it wasn't limiting rather a case of understanding.
 
 ### Actor diagram
 
   ![actor diagram img](public/img/actoren_diagram_v1.png)
-  
+
+
 ### Interaction diagram
 
 ![interactin img](public/img/interaction_diagram_v1.png)
 
   The interaction flow is instant and easy to understand.
+  
 
 ### Best practices I've applied
    I've used object literals to structure my code
