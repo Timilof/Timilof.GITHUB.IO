@@ -1,4 +1,4 @@
-## Hello API 🐒
+# Round Earth viewer
 My repository for web app from scratch
 
 In the three weeks this course lasted I was tasked to make a web app from scratch using only vanilla JavaScript.
