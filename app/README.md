@@ -55,7 +55,7 @@ More specifically the app makes an api call once the page is loaded and displays
 
 ## Actor diagram
 
-  ![actor diagram img](public/img/actoren_diagram_v1.png)
+  ![actor diagram img](public/img/actoren_diagram_v2.svg)
 
 
 ## Interaction diagram
