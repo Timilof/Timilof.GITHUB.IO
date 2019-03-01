@@ -66,12 +66,12 @@ More specifically the app makes an api call once the page is loaded and displays
   
 
 ## Best practices I've applied
-   I've used object literals to structure my code
-   I don't use global variables
-   Use Strict
-   Use camelCase and clear descriptive English names
-   Neatly indented code
-   Variables are declared at the top of each scope
+   * I've used object literals to structure my code
+   * I don't use global variables
+   * Use Strict
+   * Use camelCase and clear descriptive English names
+   * Neatly indented code
+   * Variables are declared at the top of each scope
    
 ## Libraries
    [Transparency templating engine](https://github.com/leonidas/transparency)
