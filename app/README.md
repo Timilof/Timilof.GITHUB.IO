@@ -6,27 +6,27 @@ In the three weeks this course lasted I was tasked to make a web app from scratc
 
 ## My App
 My App displays all countries and independent states in the world (currently 250 countries total) and allows you to view a few details/some information about them. To do this the app uses the api [restcountries](https://restcountries.eu/).
-More specifically the app makes an api call once the page is loaded and displays all countries onze the data has been collected. The user then has the option to click on any one country which will trigger a second api call which displays more information about that specific country. 
-  
+More specifically the app makes an api call once the page is loaded and displays all countries onze the data has been collected. The user then has the option to click on any one country which will trigger a second api call which displays more information about that specific country.
+
   It looks like this.
-  
+
   ![screen cap img](public/img/screen_2.png)  
-  
- 
- 
+
+
+
 ## Features
   * Overview page with countries
   * Detailpages with more info for each country
   * Routing with [Routie](http://projects.jga.me/routie/)
   * Templating with [transparency](https://github.com/leonidas/transparency)
   * Loading states
- 
- 
-## API 
+
+
+## API
 
   I'm using the [restcountries](https://restcountries.eu/) API.
   I haven't come across any restrictions in my use case, the only problem i found was routing to each country's capital however it wasn't limiting rather a case of understanding.
-  
+
   I collect the data asynchronously with a promise
   ```javascript
   getData: function(url) {
@@ -55,7 +55,7 @@ More specifically the app makes an api call once the page is loaded and displays
 
 ## Actor diagram
 
-  ![actor diagram img](public/img/actoren_diagram_v2.svg)
+  ![actor diagram img](public/img/actoren_diagram_v3.svg)
 
 
 ## Interaction diagram
@@ -72,12 +72,12 @@ More specifically the app makes an api call once the page is loaded and displays
    * Use camelCase and clear descriptive English names
    * Neatly indented code
    * Variables are declared at the top of each scope
-   
+
 ## Libraries
 [Transparency templating engine](https://github.com/leonidas/transparency)  
 [Routie](http://projects.jga.me/routie/)
 
-## Feature wishlist 
+## Feature wishlist
   * I'd like to attempt to link a second API (sunset API) which can show what time the sun sets and rises for each county depending on the longtitude and latitude coordinates.
   * I had tried to implement a local storage to reduce the number of api calls however I found it rather difficult.
   * A filter option so the user can fill in a value in a search field and the app would filter the countries based on the input... so basically I'd like to make it possible for the user to search.
